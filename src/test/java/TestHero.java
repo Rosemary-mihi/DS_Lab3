@@ -93,7 +93,7 @@ class TestHero {
 	{
 		assertEquals("ARCHER",aA.getJobName());
 		assertEquals("MAGE", aB.getJobName());
-		assertEquals("WARROIR",aC.getJobName());
+		assertEquals("WARRIOR",aC.getJobName());
 		
 		assertEquals("ARCHER",bA.getJobName());
 		assertEquals("MAGE",bB.getJobName());
