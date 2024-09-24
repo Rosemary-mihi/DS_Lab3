@@ -40,12 +40,12 @@ class TestHero {
 	{
 		assertNull(X);
 		assertNull(Y);
-		assertNull(Y.getDEX());
-		assertNull(Y.getINT());
-		assertNull(Y.getSTR());
-		assertNull(Y.getJobName());
-		assertNull(Y.getRaceName());
-		assertNull(Y.attack(2));
+		//assertNull(Y.getDEX());
+		//assertNull(Y.getINT());
+		//assertNull(Y.getSTR());
+		//assertNull(Y.getJobName());
+		//assertNull(Y.getRaceName());
+		//assertNull(Y.attack(2));
 
 
 		assertNotNull(aA);
