@@ -51,18 +51,21 @@ class TestHero {
 		assertEquals(20,bB.getDEX());
 		assertEquals(20,cC.getDEX());
 	}
+	@Test
 	void testSTR() 
 	{
 		assertEquals(20,aA.getSTR());
 		assertEquals(25,bB.getSTR());
 		assertEquals(20,cC.getSTR());
 	}
+	@Test
 	void testINT() 
 	{
 		assertEquals(20,aA.getINT());
 		assertEquals(20,bB.getINT());
 		assertEquals(25,cC.getINT());
 	}
+	@Test
 	void testRaceName() 
 	{
 		assertEquals("ELF",aA.getRaceName());
@@ -77,6 +80,7 @@ class TestHero {
 		assertEquals("ROBOT",bC.getRaceName());
 		assertEquals("ROBOT",cC.getRaceName());
 	}
+	@Test
 	void testJobName() 
 	{
 		assertEquals("ARCHER",aA.getJobName());
@@ -91,6 +95,7 @@ class TestHero {
 		assertEquals("MAGE",bC.getJobName());
 		assertEquals("WARRIOR",cC.getJobName());
 	}
+	@Test
 	void testAttack() 
 	{
 		assertEquals(375,aA.attack(10));
