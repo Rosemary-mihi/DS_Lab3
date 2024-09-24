@@ -77,15 +77,15 @@ class TestHero {
 	void testRaceName() 
 	{
 		assertEquals("ELF",aA.getRaceName());
-		assertEquals("ELF",bA.getRaceName());
-		assertEquals("ELF",cA.getRaceName());
+		assertEquals("ELF",aB.getRaceName());
+		assertEquals("ELF",aC.getRaceName());
 		
-		assertEquals("DWARF",aB.getRaceName());
+		assertEquals("DWARF",bA.getRaceName());
 		assertEquals("DWARF",bB.getRaceName());
-		assertEquals("DWARF",cB.getRaceName());
+		assertEquals("DWARF",bC.getRaceName());
 		
-		assertEquals("ROBOT",aC.getRaceName());
-		assertEquals("ROBOT",bC.getRaceName());
+		assertEquals("ROBOT",cA.getRaceName());
+		assertEquals("ROBOT",cB.getRaceName());
 		assertEquals("ROBOT",cC.getRaceName());
 	}
 	@Test
