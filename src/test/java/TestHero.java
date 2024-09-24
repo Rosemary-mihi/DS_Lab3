@@ -40,6 +40,14 @@ class TestHero {
 	{
 		assertNull(X);
 		assertNull(Y);
+		assertNull(Y.getDEX());
+		assertNull(Y.getINT());
+		assertNull(Y.getSTR());
+		assertNull(Y.getJobName());
+		assertNull(Y.getRaceName());
+		assertNull(Y.attack(2));
+
+
 		assertNotNull(aA);
 		assertNotNull(bB);
 		assertNotNull(cC);
@@ -84,30 +92,30 @@ class TestHero {
 	void testJobName() 
 	{
 		assertEquals("ARCHER",aA.getJobName());
-		assertEquals("MAGE",bA.getJobName());
-		assertEquals("WARROIR",cA.getJobName());
+		assertEquals("MAGE", aB.getJobName());
+		assertEquals("WARROIR",aC.getJobName());
 		
-		assertEquals("ARCHER",aB.getJobName());
+		assertEquals("ARCHER",bA.getJobName());
 		assertEquals("MAGE",bB.getJobName());
-		assertEquals("WARRIOR",cB.getJobName());
+		assertEquals("WARRIOR",bC.getJobName());
 		
-		assertEquals("ARCHER",aC.getJobName());
-		assertEquals("MAGE",bC.getJobName());
+		assertEquals("ARCHER",cA.getJobName());
+		assertEquals("MAGE",cB.getJobName());
 		assertEquals("WARRIOR",cC.getJobName());
 	}
 	@Test
 	void testAttack() 
 	{
 		assertEquals(375,aA.attack(10));
-		assertEquals(225,bA.attack(10));
-		assertEquals(225,cA.attack(10));
+		assertEquals(225,aB.attack(10));
+		assertEquals(225,aC.attack(10));
 		
-		assertEquals(300,aB.attack(10));
+		assertEquals(300,bA.attack(10));
 		assertEquals(220,bB.attack(10));
-		assertEquals(270,cB.attack(10));
-		
-		assertEquals(300,aC.attack(10));
 		assertEquals(270,bC.attack(10));
+		
+		assertEquals(300,cA.attack(10));
+		assertEquals(270,cB.attack(10));
 		assertEquals(220,cC.attack(10));
 	}
 }
