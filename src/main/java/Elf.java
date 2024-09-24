@@ -6,4 +6,9 @@ public class Elf extends Race
 	{
 		return 25;
 	}
+	@Override
+	public String name()
+	{
+		return "ELF";
+	}
 }

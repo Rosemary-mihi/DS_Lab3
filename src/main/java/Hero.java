@@ -17,30 +17,30 @@ public class Hero implements HeroInterface {
 	@Override
 	public int getSTR()
 	{
-		return 20;
+		return race.getSTR();
 	}
 
 	@Override
 	public int getDEX() 
 	{
-		return 20;
+		return race.getDEX();
 	}
 
 	@Override
 	public int getINT() 
 	{
-		return 20;
+		return race.getINT();
 	}
 
 	@Override
 	public String getRaceName() {
-		return this.race.toString().toUpperCase();
+		return race.name();
 	}
 
 	@Override
 	public String getJobName() 
 	{
-		return this.job.toString().toUpperCase();
+		return job.name();
 	}
 
 }

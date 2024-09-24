@@ -30,7 +30,7 @@ public class HeroFactory
 	   {
 		   job = new Warrior();
 	   }
-	   if (job == null && race == null)
+	   if (job == null || race == null)
 	   {
 		   return null;
 	   }

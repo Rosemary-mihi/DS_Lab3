@@ -6,4 +6,9 @@ public class Warrior extends Job
 	{
 		return (int) (hero.getSTR()*val+hero.getDEX());
 	}
+	@Override
+	public String name()
+	{
+		return "WARRIOR";
+	}
 }

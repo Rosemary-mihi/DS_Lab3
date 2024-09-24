@@ -6,4 +6,9 @@ public class Archer extends Job
 	{
 		return (int) (hero.getDEX()*1.5*val);
 	}
+	@Override
+	public String name()
+	{
+		return "ARCHER";
+	}
 }

@@ -6,4 +6,9 @@ public class Mage extends Job
 	{
 		return (int) (hero.getDEX()+hero.getINT()*val);
 	}
+	@Override
+	public String name()
+	{
+		return "MAGE";
+	}
 }

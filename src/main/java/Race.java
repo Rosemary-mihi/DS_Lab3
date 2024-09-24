@@ -1,5 +1,5 @@
 
-public class Race extends Hero
+public class Race 
 {
 	public int getDEX()
 	{
@@ -12,5 +12,9 @@ public class Race extends Hero
 	public int getINT()
 	{
 		return 20;
+	}
+	public String name()
+	{
+		return null;
 	}
 }
